@@ -1,0 +1,69 @@
+{
+	"name": "@itsa.io/web3utils",
+	"license": "BSD-3-Clause",
+	"version": "0.0.1",
+	"description": "ITSA javascript utilities for web development",
+	"main": "index.js",
+	"keywords": [
+		"itsa",
+		"utils",
+		"utilities"
+	],
+	"scripts": {
+		"lint": "eslint --fix ./lib --ext .js --ext .jsx",
+		"test": "cross-env NODE_ICU_DATA=node_modules/full-icu jest"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.jsx?$": "babel-jest"
+		}
+	},
+	"engines": {
+		"node": ">=12"
+	},
+	"directories": {
+		"lib": "./lib"
+	},
+	"repository": {
+    	"type": "git",
+    	"url": "git+https://github.com/itsa/web3utils.git"
+  	},
+	"devDependencies": {
+		"@babel/core": "^7.10.4",
+		"@babel/preset-env": "^7.10.4",
+		"@babel/preset-react": "^7.10.4",
+		"@testing-library/react": "^10.4.9",
+		"@testing-library/react-hooks": "^3.4.1",
+		"babel": "^6.23.0",
+		"babel-jest": "^26.1.0",
+		"cross-env": "^7.0.2",
+		"eslint": "^7.4.0",
+		"eslint-config-airbnb": "^18.2.0",
+		"eslint-config-node": "^4.1.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-loader": "^4.0.2",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-jest": "^23.18.0",
+		"eslint-plugin-jsx-a11y": "^6.3.1",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-react": "^7.20.3",
+		"eslint-plugin-react-hooks": "^4.0.6",
+		"full-icu": "^1.3.1",
+		"jest": "^26.1.0",
+		"lodash": "4.17.17",
+		"prettier": "^2.0.5",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-test-renderer": "^16.13.1",
+		"web3": "^1.2.9"
+	},
+	"peerDependencies": {
+		"gatsby-plugin-intl": "^0.3.3",
+		"js-cookie": "^2.2.1",
+		"jsonwebtoken": "^8.5.1",
+		"lodash": "^4.17.17",
+		"react": "^16.13.1",
+		"select": "^1.1.2",
+		"web3": "^1.2.9"
+	}
+}

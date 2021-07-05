@@ -1,0 +1,17 @@
+{
+  "extends": ["airbnb", "airbnb/hooks", "prettier", "prettier/react"],
+  "plugins": ["jest", "prettier"],
+  "rules": {
+    "import/no-unresolved": "off",
+    "prettier/prettier": "error",
+    "no-await-in-loop": "off",
+    "no-param-reassign": "off",
+    "no-shadow": "warn",
+    "no-new": "off",
+    "quote-props": ["error", "as-needed"],
+    "react/forbid-prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-props-no-spreading": "off"
+  },
+  "env": {}
+}

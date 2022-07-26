@@ -22,6 +22,7 @@ import toBN, { cleanCacheToBN } from './lib/toBN';
 import useIntl from './lib/useIntl';
 import useMetamask from './lib/useMetamask';
 import usePrevious from './lib/usePrevious';
+import websocket from './lib/websocket';
 
 export {
 	cleanCacheFormatBN,
@@ -48,4 +49,5 @@ export {
 	useIntl,
 	useMetamask,
 	usePrevious,
+	websocket,
 };

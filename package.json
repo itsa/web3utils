@@ -1,7 +1,7 @@
 {
 	"name": "@itsa.io/web3utils",
 	"license": "BSD-3-Clause",
-	"version": "0.0.5",
+	"version": "0.2.1",
 	"description": "ITSA javascript utilities for web development",
 	"main": "index.js",
 	"keywords": [

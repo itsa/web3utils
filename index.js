@@ -1,4 +1,4 @@
-import { delay } from './lib/timers';
+import { delay, later, async } from './lib/timers';
 import { emailPattern } from './lib/patterns';
 import {
 	getNodeStyle,
@@ -22,6 +22,10 @@ import toBN, { cleanCacheToBN } from './lib/toBN';
 import useIntl from './lib/useIntl';
 import useMetamask from './lib/useMetamask';
 import usePrevious from './lib/usePrevious';
+import websocket from './lib/websocket';
+import serviceworkers from './lib/serviceworkers';
+
+const { clearCachedFiles, unregisterServiceworkers, updateServiceworkers } = serviceworkers;
 
 export {
 	cleanCacheFormatBN,
@@ -29,6 +33,8 @@ export {
 	cookieProperty,
 	copyToClipboard,
 	delay,
+	later,
+	async,
 	emailPattern,
 	formatBN,
 	getNodeStyle,
@@ -48,4 +54,8 @@ export {
 	useIntl,
 	useMetamask,
 	usePrevious,
+	websocket,
+	clearCachedFiles,
+	unregisterServiceworkers,
+	updateServiceworkers,
 };

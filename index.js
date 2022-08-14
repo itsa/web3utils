@@ -20,7 +20,7 @@ import noCryptoWalletMsg from './lib/noCryptoWalletMsg';
 import translate from './lib/translate';
 import toBN, { cleanCacheToBN } from './lib/toBN';
 import useIntl from './lib/useIntl';
-import useMetamask from './lib/useMetamask';
+import cryptowalletCtx, { Provider as CryptoWalletProvider} from './lib/contextCryptoWallet';
 import usePrevious from './lib/usePrevious';
 import websocket from './lib/websocket';
 import serviceworkers from './lib/serviceworkers';
@@ -35,6 +35,8 @@ export {
 	delay,
 	later,
 	async,
+	cryptowalletCtx,
+	CryptoWalletProvider,
 	emailPattern,
 	formatBN,
 	getNodeStyle,
@@ -52,7 +54,6 @@ export {
 	toBN,
 	translate,
 	useIntl,
-	useMetamask,
 	usePrevious,
 	websocket,
 	clearCachedFiles,

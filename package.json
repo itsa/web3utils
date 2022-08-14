@@ -1,7 +1,7 @@
 {
 	"name": "@itsa.io/web3utils",
 	"license": "BSD-3-Clause",
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"description": "ITSA javascript utilities for web development",
 	"main": "index.js",
 	"keywords": [
@@ -58,6 +58,7 @@
 		"web3": "^1.2.9"
 	},
 	"peerDependencies": {
+		"ctx-provider": "^1.0.2",
 		"gatsby-plugin-intl": "^0.3.3",
 		"js-cookie": "^2.2.1",
 		"jsonwebtoken": "^8.5.1",

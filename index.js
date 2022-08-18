@@ -24,6 +24,7 @@ import cryptowalletCtx, { Provider as CryptoWalletProvider} from './lib/contextC
 import usePrevious from './lib/usePrevious';
 import websocket from './lib/websocket';
 import serviceworkers from './lib/serviceworkers';
+import managedPromise from './lib/managedPromise';
 
 const { clearCachedFiles, unregisterServiceworkers, updateServiceworkers } = serviceworkers;
 
@@ -45,6 +46,7 @@ export {
 	isNode,
 	localStorage,
 	localStorageProperty,
+	managedPromise,
 	noCryptoWalletMsg,
 	nodeBottom,
 	nodeLeft,

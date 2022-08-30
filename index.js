@@ -20,11 +20,14 @@ import noCryptoWalletMsg from './lib/noCryptoWalletMsg';
 import translate from './lib/translate';
 import toBN, { cleanCacheToBN } from './lib/toBN';
 import useIntl from './lib/useIntl';
-import cryptowalletCtx, { Provider as CryptoWalletProvider} from './lib/contextCryptoWallet';
+import cryptowalletCtx, { Provider as CryptoWalletProvider, walletEvents } from './lib/contextCryptoWallet';
 import usePrevious from './lib/usePrevious';
 import websocket from './lib/websocket';
 import serviceworkers from './lib/serviceworkers';
 import managedPromise from './lib/managedPromise';
+import cryptowalletDetection from './lib/cryptowalletDetection';
+import webBluetoothDetection from './lib/webBluetoothDetection';
+import hasWebUsb from './lib/webUsbDetection';
 
 const { clearCachedFiles, unregisterServiceworkers, updateServiceworkers } = serviceworkers;
 
@@ -37,10 +40,12 @@ export {
 	later,
 	async,
 	cryptowalletCtx,
+	cryptowalletDetection,
 	CryptoWalletProvider,
 	emailPattern,
 	formatBN,
 	getNodeStyle,
+	hasWebUsb,
 	idGenerator,
 	isMobile,
 	isNode,
@@ -61,4 +66,6 @@ export {
 	clearCachedFiles,
 	unregisterServiceworkers,
 	updateServiceworkers,
+	walletEvents,
+	webBluetoothDetection,
 };

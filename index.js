@@ -24,6 +24,7 @@ import toBN, { cleanCacheToBN } from './lib/toBN';
 import useIntl from './lib/useIntl';
 import cryptowalletCtx, { Provider as CryptoWalletProvider, walletEvents } from './lib/contextCryptoWallet';
 import usePrevious from './lib/usePrevious';
+import useQueue from './lib/useQueue';
 import websocket from './lib/websocket';
 import serviceworkers from './lib/serviceworkers';
 import managedPromise from './lib/managedPromise';
@@ -65,6 +66,7 @@ export {
 	translate,
 	useIntl,
 	usePrevious,
+	useQueue,
 	websocket,
 	clearCachedFiles,
 	unregisterServiceworkers,

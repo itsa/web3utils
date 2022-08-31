@@ -10,6 +10,8 @@ import {
 } from './lib/dom-elements';
 import cookieProperty from './lib/cookieProperty';
 import copyToClipboard from './lib/copyToClipboard';
+import websiteURL from './lib/websiteURL';
+import ios from './lib/detectiOS';
 import isMobile from './lib/detectMobile';
 import formatBN, { cleanCacheFormatBN } from './lib/format-bn';
 import idGenerator from './lib/idGenerator';
@@ -49,6 +51,7 @@ export {
 	idGenerator,
 	isMobile,
 	isNode,
+	ios,
 	localStorage,
 	localStorageProperty,
 	managedPromise,
@@ -68,4 +71,5 @@ export {
 	updateServiceworkers,
 	walletEvents,
 	webBluetoothDetection,
+	websiteURL,
 };
